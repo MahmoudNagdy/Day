@@ -1,0 +1,100 @@
+.navbar-default{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    background: $blackColor;
+    border: none;
+    border-top: 1px solid $redColor;
+    height: 74px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+
+    .navbar-brand{
+        font-family: 'Jost', sans-serif;
+        text-transform: uppercase;
+        color: #FFF;
+        font-size: 35px;
+        padding-top: 23px;
+
+        &:hover{
+            color: #FFF;
+        }
+    }
+
+    .navbar-nav{
+        li{
+            a{
+                @extend %transition;
+                color: #FFF;
+                font-family: 'Dongle', sans-serif;
+                padding: 25px 15px 25px 15px;
+                font-size: 23px;
+                margin-right: 2px;
+                margin-bottom: 1px;
+
+                @media #{$maxMobile} {
+                    padding: 14px 15px 14px 15px;
+                }
+
+
+                &.active{
+                    background-color: $redColor;
+                }
+
+                &:hover{
+                    background-color: $redColor;
+                    color: #FFF;
+                }
+
+                &:focus{
+                color: #FFF;
+                }
+            }
+        }
+    }
+
+    .dropdown-menu{
+        right: auto;
+        left: 0;
+
+        li{
+            a{
+                @extend %transition;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                min-width: 200px;
+                color: $blackColor;
+
+                &:hover{
+                background-color: $redColor;
+                color: #FFF;
+                padding-left: 25px;
+                }
+
+                @media (max-width: 767px) {
+                    color: #FFF !important;
+                    padding-top: 10px !important;
+                    padding-bottom: 10px !important;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+ 
+
+    .dropdown-menu .divider{
+        background-color: $redColor;
+    }
+
+
+    .navbar-collapse{
+        border:none;
+        background-color: $blackColor;       
+    }
+}

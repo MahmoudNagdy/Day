@@ -1,0 +1,40 @@
+.contact-form{
+    button{
+        @extend %transition;
+        text-transform: capitalize;
+        font-family: 'Raleway', sans-serif;
+        outline: none;
+        border: none;
+        background-color: $redColor;
+        color: #FFF;
+        padding: 15px 40px;
+
+        @media #{$minMedium} {
+            margin-top: 0;
+        }
+
+        @media #{$minLarge} {
+            margin-top: 60px;
+        }
+        
+        &:hover{
+            background: #e82d2d;
+        }
+    }
+}
+
+.scroll{
+    i{
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        background-color: $redColor;
+        color: #FFF;
+        line-height: 2;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+    }
+}

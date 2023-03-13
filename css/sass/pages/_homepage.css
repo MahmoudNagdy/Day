@@ -1,0 +1,40 @@
+/*Start Section Hero*/
+.hero {
+  background: url(../images/hero-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 700px;
+}
+
+.hero .over-color {
+  width: 100%;
+  height: 700px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero .over-color h1 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-top: 200px;
+  font-size: 50px;
+}
+
+.hero .over-color p {
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  margin-bottom: 45px;
+  letter-spacing: 2px;
+}
+
+.hero .over-color a {
+  color: #FFF;
+  text-decoration: none;
+  border: 2px solid #FFF;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  letter-spacing: 2px;
+}
+
+/*End Section Hero*/

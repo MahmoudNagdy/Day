@@ -1,0 +1,18 @@
+/* Start Footer */
+.footer {
+  background: #0c0c0c;
+  height: 600px;
+}
+
+.footer .day-details {
+  background: #191919;
+  padding: 30px 20px;
+  border-top: 5px solid aliceblue;
+}
+
+.footer .day-details h3 {
+  text-transform: capitalize;
+  color: #FFF;
+}
+
+/* End Footer */
